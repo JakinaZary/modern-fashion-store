@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light;
+  --ink: #171717;
+  --paper: #fff;
+  --sand: #f5f0e8;
+  --muted: #737373;
+  --gold: #b68c5a;
+  --line: #e8e4de;
+  --soft: #faf9f7;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Inter", Arial, sans-serif;
+  --page-width: 1320px;
+  --radius: 3px;
+  --shadow: 0 16px 45px rgb(23 23 23 / 9%);
+}

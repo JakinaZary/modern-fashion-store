@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#171717">
+  <meta name="description" content="Parcourez la sélection KANTO WEAR : vêtements et accessoires pour tous les jours.">
+  <title>La boutique — KANTO WEAR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/responsive.css">
+  <script type="module" src="../js/main.js"></script>
+</head>
+<body data-page="shop">
+  <a class="skip-link" href="#main">Aller au contenu</a><div id="site-header"></div>
+  <main id="main" class="page-width page-main">
+    <div class="page-intro"><p class="eyebrow">La sélection KANTO</p><h1>La boutique</h1><p>Des pièces bien choisies pour composer votre vestiaire, à votre rythme.</p></div>
+    <section class="shop-layout" aria-label="Catalogue de produits">
+      <aside class="filter-panel">
+        <h2>Affiner</h2>
+        <label for="shop-search">Rechercher</label><input id="shop-search" type="search" placeholder="Une pièce, une envie…">
+        <label for="category-filter">Catégorie</label>
+        <select id="category-filter"><option value="">Toutes les catégories</option><option value="homme">Homme</option><option value="femme">Femme</option><option value="accessoires">Accessoires</option><option value="t-shirts">T-shirts</option><option value="chemises">Chemises</option><option value="pantalons">Pantalons</option><option value="robes">Robes</option><option value="vestes">Vestes</option><option value="chaussures">Chaussures</option></select>
+        <label for="price-filter">Prix maximum <span id="price-value"></span></label>
+        <input id="price-filter" type="range" min="0" max="500000" step="5000" value="500000">
+        <button id="reset-filters" class="text-button" type="button">Réinitialiser les filtres</button>
+      </aside>
+      <div class="catalog">
+        <div class="catalog-toolbar"><p id="results-count" aria-live="polite"></p><label for="sort-filter" class="sr-only">Trier les produits</label><select id="sort-filter"><option value="featured">À découvrir</option><option value="newest">Nouveautés</option><option value="price-asc">Prix croissant</option><option value="price-desc">Prix décroissant</option></select></div>
+        <div id="shop-products" class="product-grid" aria-live="polite" aria-busy="true"><p class="loading-state" role="status">Chargement de la sélection…</p></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div><div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
